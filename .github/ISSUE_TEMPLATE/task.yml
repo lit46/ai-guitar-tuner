@@ -1,0 +1,20 @@
+name: "🧩 Task"
+description: "Add or track a task for the AI Guitar Tuner project"
+title: "[TASK] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Task description"
+      description: "What needs to be done?"
+      placeholder: "Example: Add FFT pitch detection code"
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: "Acceptance criteria"
+      description: "How will we know this task is done?"
+      placeholder: "The FFT pitch detector runs on sample audio and shows 'Tune up/down/in-tune'"
