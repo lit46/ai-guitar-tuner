@@ -1,0 +1,38 @@
+name: "🐞 Bug report"
+description: "Report a problem with the AI Guitar Tuner project"
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce"
+      description: "Tell us what you did before the bug happened."
+      placeholder: "1. Open Colab\n2. Run cell 3\n3. Error appears"
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behavior"
+      description: "What did you expect to happen?"
+      placeholder: "It should detect correct note frequency."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual behavior"
+      description: "What actually happened?"
+      placeholder: "Model crashed with KeyError"
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "Python/Colab version, OS, etc."
+      placeholder: "Example: Colab Python 3.10"
